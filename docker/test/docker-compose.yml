@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+
+  symfonyplay:
+    build: .
+    ports:
+      - "8090:80"
+    command: tail -F anything
+    volumes:
+      - "../../:/var/www/symfonyplay"
+
+
+
+
